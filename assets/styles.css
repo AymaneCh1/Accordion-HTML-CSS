@@ -30,16 +30,15 @@ html {
 
 body {
   min-height: 0;
-  display: inline-block;
   position: relative;
   left: 50%;
   margin: 90px 0;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  -webkit-box-shadow: 0 10px 0 0 #c5953c inset;
-          box-shadow: 0 10px 0 0 #c5953c inset;
-  background-color: #fefffa;
-  max-width: 600px;
+  -webkit-box-shadow: 0 10px 0 0 #fefffa inset;
+          box-shadow: 0 10px 0 0 #fefffa inset;
+  background-color: rgba(48, 69, 92, 0.8);
+  max-width: 800px;
   padding: 30px;
 }
 
@@ -56,8 +55,9 @@ body {
   }
 }
 
-h1, h2 {
-  color: #c5953c;
+h1,
+h2 {
+  color: #fefffa;
 }
 
 h1 {
@@ -74,13 +74,13 @@ h2 {
   font-weight: 300;
   letter-spacing: 1px;
   display: block;
-  background-color: #fefffa;
+  background-color: transparent;
   margin: 0;
   cursor: pointer;
 }
 
 p {
-  color: rgba(48, 69, 92, 0.8);
+  color: #fefffa;
   font-size: 17px;
   line-height: 26px;
   letter-spacing: 1px;
@@ -122,8 +122,8 @@ ul li:nth-of-type(2) {
 }
 
 ul li:nth-of-type(3) {
-  -webkit-animation-delay: 1.0s;
-          animation-delay: 1.0s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 ul li:last-of-type {
@@ -141,7 +141,7 @@ ul li i {
 ul li i:before, ul li i:after {
   content: "";
   position: absolute;
-  background-color: #c5953c;
+  background-color: #fefffa;
   width: 3px;
   height: 9px;
 }
@@ -156,7 +156,7 @@ ul li i:after {
           transform: translate(2px, 0) rotate(-45deg);
 }
 
-ul li input[type=checkbox] {
+ul li input[type="checkbox"] {
   position: absolute;
   cursor: pointer;
   width: 100%;
@@ -165,7 +165,7 @@ ul li input[type=checkbox] {
   opacity: 0;
 }
 
-ul li input[type=checkbox]:checked ~ p {
+ul li input[type="checkbox"]:checked ~ p {
   margin-top: 0;
   max-height: 0;
   opacity: 0;
@@ -173,12 +173,12 @@ ul li input[type=checkbox]:checked ~ p {
           transform: translate(0, 50%);
 }
 
-ul li input[type=checkbox]:checked ~ i:before {
+ul li input[type="checkbox"]:checked ~ i:before {
   -webkit-transform: translate(2px, 0) rotate(45deg);
           transform: translate(2px, 0) rotate(45deg);
 }
 
-ul li input[type=checkbox]:checked ~ i:after {
+ul li input[type="checkbox"]:checked ~ i:after {
   -webkit-transform: translate(-2px, 0) rotate(-45deg);
           transform: translate(-2px, 0) rotate(-45deg);
 }
